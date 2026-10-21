@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The message of my heart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="frame">
+
+    <!-- Title: each letter is its own span so it can bounce in one by one -->
+    <h1 class="title" aria-label="The message of my heart 😘">
+      <span class="word" aria-hidden="true"><span style="--i:0">T</span><span style="--i:1">h</span><span style="--i:2">e</span></span>
+      <span class="word" aria-hidden="true"><span style="--i:3">m</span><span style="--i:4">e</span><span style="--i:5">s</span><span style="--i:6">s</span><span style="--i:7">a</span><span style="--i:8">g</span><span style="--i:9">e</span></span>
+      <span class="word" aria-hidden="true"><span style="--i:10">o</span><span style="--i:11">f</span></span>
+      <span class="word" aria-hidden="true"><span style="--i:12">m</span><span style="--i:13">y</span></span>
+      <span class="word" aria-hidden="true"><span style="--i:14">h</span><span style="--i:15">e</span><span style="--i:16">a</span><span style="--i:17">r</span><span style="--i:18">t</span></span>
+      <span class="word" aria-hidden="true"><span style="--i:19">😘</span></span>
+    </h1>
+
+    <!-- Countdown: 3, 2, 1 -->
+    <div class="countdown" aria-hidden="true">
+      <span class="num n3">3</span>
+      <span class="num n2">2</span>
+      <span class="num n1">1</span>
+    </div>
+
+    <!-- Bunny holding the message box -->
+    <section class="reveal">
+      <div class="bunny">
+        <svg class="bunny-head" viewBox="0 0 200 170" role="img" aria-label="A cute bunny">
+          <!-- ears -->
+          <g class="ear ear-left">
+            <ellipse cx="68" cy="52" rx="20" ry="48" fill="#ffffff" stroke="#f2a9c9" stroke-width="3"/>
+            <ellipse cx="68" cy="56" rx="10" ry="34" fill="#ffc8de"/>
+          </g>
+          <g class="ear ear-right">
+            <ellipse cx="132" cy="52" rx="20" ry="48" fill="#ffffff" stroke="#f2a9c9" stroke-width="3"/>
+            <ellipse cx="132" cy="56" rx="10" ry="34" fill="#ffc8de"/>
+          </g>
+          <!-- head -->
+          <ellipse cx="100" cy="120" rx="64" ry="50" fill="#ffffff" stroke="#f2a9c9" stroke-width="3"/>
+          <!-- cheeks -->
+          <ellipse cx="62" cy="132" rx="11" ry="7" fill="#ffb3d1" opacity=".8"/>
+          <ellipse cx="138" cy="132" rx="11" ry="7" fill="#ffb3d1" opacity=".8"/>
+          <!-- eyes -->
+          <g class="eyes">
+            <ellipse cx="76" cy="114" rx="6" ry="8" fill="#5a1740"/>
+            <ellipse cx="124" cy="114" rx="6" ry="8" fill="#5a1740"/>
+            <circle cx="78" cy="111" r="2.2" fill="#ffffff"/>
+            <circle cx="126" cy="111" r="2.2" fill="#ffffff"/>
+          </g>
+          <!-- nose and mouth -->
+          <path d="M94 128 Q100 123 106 128 Q100 136 94 128Z" fill="#ff6fa5"/>
+          <path d="M100 133 V139 M100 139 Q92 146 86 140 M100 139 Q108 146 114 140" fill="none" stroke="#5a1740" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+
+        <!-- paws gripping the top of the box -->
+        <span class="paw paw-left"></span>
+        <span class="paw paw-right"></span>
+
+        <div class="box">
+          <p class="message">I LOVE YOU ❤️</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
